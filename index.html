@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <title>StudyFlow</title>
+</head>
+<body>
+  <header>
+    <h1>StudyFlow</h1>
+    <button id="installBtn" style="display:none;">Install App</button>
+  </header>
+  
+  <main>
+    <section id="todo">
+      <h2>Upcoming Finals</h2>
+      <input type="text" id="taskInput" placeholder="e.g., Cram for Chemistry...">
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
