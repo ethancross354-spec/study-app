@@ -1,6 +1,6 @@
 // Register Service Worker
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js');
+  navigator.serviceWorker.register('sw.js');
 }
 
 // Logic for Task List
@@ -30,4 +30,5 @@ document.getElementById('installBtn').addEventListener('click', () => {
   deferredPrompt.userChoice.then(() => {
     document.getElementById('installBtn').style.display = 'none';
   });
+
 });
